@@ -10,6 +10,9 @@ GET     /:name                     controllers.HomeController.hello(name: String
 POST     /books                     controllers.BookController.save(request: Request)
 GET      /books/_search             controllers.BookController.listBooks()
 
+#DI example
+GET      /computation/_calculate    controllers.DIController.calculate()
+
 #Non blocking operations
 GET      /index/_async                     controllers.AsyncController.index()
 
